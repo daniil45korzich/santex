@@ -1,0 +1,12 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 12" width="7" height="12">
+	<title>шапка</title>
+	<defs>
+		<image  width="7" height="12" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAMCAMAAACZS1ciAAAAAXNSR0IB2cksfwAAAN5QTFRFenp6V1dXTU1NT09PTU1NV1dXbm5uTU1NUVFRVVVVUlJSTU1Nbm5uU1NTW1tbY2NjV1dXY2NjW1tbU1NTTExMY2NjcnJyXFxcd3d3ZWVlTExMTk5OX19fcHBwdHR0YWFhTk5OW1tbUlJSVlZWV1dXV1dXU1NTWVlZampqT09PTk5OUlJSTk5OTk5OZmZmb29vXl5eTExMTk5OXV1dbGxsb29vZmZmT09PTU1NUFBQZmZmbGxsaGhoa2trWFhYS0tLWFhYa2traWlpa2trZ2dnUVFRZmZmcXFxYWFhcHBw5Qb4gQAAAEp0Uk5TAEvQ/tNQRvvLj8n8TMrLFAASxdH8dQAAAG/68JEAAIrxle9gKl3snSzw/N378zABmv//nwEAPPH/9UEAAAKs/68EAABG8k0CbAbStL3RAAAAaElEQVR4nGNgYGRiZmFlYGBj5+Dk4uZh4OXjFxAUEmYQERUTl5CUYpCWkRWXk1dgUFRSVlFVU2fQ0NTS1tHVY9A3MDQyNDZhMDUzt7C0smawsbWzd3B0YnC2dnF1c3ZmkJV19/A0NQUAlJoMO9uCTp8AAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="шапка">
+		<use id="Слой 473" style="opacity: 0.6" href="#img1" x="0" y="0" />
+	</g>
+</svg>

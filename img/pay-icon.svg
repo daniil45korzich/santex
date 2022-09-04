@@ -1,0 +1,12 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 10" width="15" height="10">
+	<title>шапка</title>
+	<defs>
+		<image  width="15" height="10" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAKCAMAAABcxfTLAAAAAXNSR0IB2cksfwAAARdQTFRFjo6Qh4iKhoeJhoeJiImLi4yNiouNg4SGg4SFhYaHjY6QjI2OiIqMiYmLiYqMiYqMiImLiYqMjI2PjY2PkZKUkZKUj5CSkJGSj5CTkJGTkJGTkZKTkZKUkJGTjY6QiImLjIuNhISGhYaIhYaIg4SFj5CRlZaYkZGTkpKUkZKTkZKUj4+SgoOGeHl6g4SFgYKEgYKEgYKEgIGDjo+RnJ2ek5SVk5OVkZKUkJCSj4+Rg4SGdHV2f4CBgYKEf4CCkJGSmJmajo+Qjo+Rjo6Qj5CRj5CRhIWHeHl8gIGDhYaHhIWHg4SGi4yOiYqLhYaIiImKj5CRiImLgoOFiImLhoeJh4iKjI2PkJCShoiJhoeJhoeJhoeJj5CSV9A/8wAAAF10Uk5Ta5SHiJNtoQcHBp/UvsLDwsG+0tO8s62urbW9vb270ZAMOmJbYDAMDAwMC46OADtlXl9jLQAAAAAAjJEAAAAAAAAAAAAAjY4AAAAAAAAAAACLnwEAAACdb5mJipdxV/woVQAAAI1JREFUeJxjYGBkYoYBJhZWBjZ2BODg5GLg5uHlAwJ+ARAQFGIQFhEVExeXkJSSlpGRlpVjkFdQVFJWVlFVU9fQ0NTSZtDR1dM3MDQyNjE1MzO3sGSwsraxtbW1s3dwdHJ2sXdlcHP38PTy8vbx9fLz8vcJYAgMCg4JCQn18wOSIX5hDOERkVEwEBkdAwD/rho+Gu2xIAAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="шапка">
+		<use id="Слой 511" href="#img1" x="0" y="0" />
+	</g>
+</svg>

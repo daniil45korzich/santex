@@ -1,0 +1,12 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
+	<title>шапка</title>
+	<defs>
+		<image  width="20" height="20" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAAAXNSR0IB2cksfwAAAcVQTFRF5ubm5+fnzs7OxsbGwMDApqamj4+Pf39/dHR0c3Nzenp6h4eHnp6etra2ysrKuLi4xcXF6urq0tLStLS0g4ODb29vbW1tcXFxcHBweHh4pKSkubm56+vrr6+vcXFxampqaGhobm5ucnJyhoaGyMjI4eHh6OjovLy8b29vaWlpgYGBs7OzbGxslpaW5eXl5OTk4+Pj09PTd3d3a2tre3t75ubm////5eXleHh4srKy3NzcmJiYxMTEzMzMeHh4y8vLx8fHdnZ229vbqqqqq6ur19fX4eHhd3d3ioqKlZWVnJycysrKZGRkenp6lZWVxsbG+fn5oqKicnJylJSU0NDQ/f39oaGhdHR0np6ez8/P/Pz8c3Nz09PTycnJeXl5f39/tra23t7egICAk5OTz8/Pfn5+vLy8srKy2traqKio6+vrhYWFhYWF19fXqampnp6e5OTkyMjIf39/cXFxx8fH0tLShoaGtbW17+/vwcHBcnJydHR0pqamo6OjZ2dndHR0gICAjY2NfHx8c3Nzi4uLuLi4yMjI3t7ejo6Oi4uLoaGhsbGxvLy8urq6pqamlpaWj4+PkZGRjo6Onp6etLS0v7+/w8PDS2kTaAAAAJd0Uk5TAAAAAABDl8vl6deuZRMAAAAAADW+/////+JpAABc9f////+iBgAAUf3/////pAEAAB/t////////agCc///qFBnz/2tZ////t4v////coP///+uc////6H7////////TQ///owve/0wAcf//zQVw//////o7AclnACn67l+A//bMod3zpSkAAKKgWyMADUmDoaaRYiIAALTi/hYAAAFDSURBVHicPdBlVwJBGAXgF7ET1AkFZQcVBVdRVwa7MVHE7g7s7u7u+L3uwuL9+Jx7ztx3ADQQog0NC4+IjIqOiY2LT9DpAWRMTEpGGBFCMU5JNWj9aExLNwnMTJQgnJFpBMiyZOdYbbk2kQRiysu3Q0FhkVTs4M4SFtRSDZSVm6QKznklVhFVVUNNLSMOGesoVVWqhwZMRBfnjU1INYKboUUkplbO29xBI7QdOuRnRQ/v9Ar/2gXdMiLaw3v7BIIQVjb0w4AykNFBPuR1D4+MjolmNA4T/n1M6XomOXdOMXEaZmYRUbv+zAl4HnwLgQMZ9Si2uCQsr4BvVb0aiWuu9Y1N69Y2wM5u8D4iYbMk4b19CxwcUur/zUD76Niut8DJKTs7v7hkGIsYX13f3N7JeP/w+GR4fnl9e//4/Pr+0f3K+AeyyUomqjWihAAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="шапка">
+		<use id="Слой 470 копия" href="#img1" x="0" y="0" />
+	</g>
+</svg>
