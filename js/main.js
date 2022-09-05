@@ -28,10 +28,6 @@ window.addEventListener("load", function () {
         var swiperSpecialist = new Swiper(SpecialistSwiper, {
             loop: true,
             spaceBetween: 15,
-            autoplay: {
-                delay: 1500,
-                disableOnInteraction: false,
-            },
             navigation: {
                 nextEl: ".specialist-arrows__next",
                 prevEl: ".specialist-arrows__prev",
@@ -115,8 +111,10 @@ window.addEventListener("load", function () {
 /* form */
 window.addEventListener("load", function () {
     let Fade = document.querySelector(".overlay");
-    let Modal = document.querySelector(".form-l");
-    let ModalClose = document.querySelector(".form-l__close");
+    let Modal = document.querySelector(".form-l--call");
+    let ModalClose = document.querySelector(".form-l--call__close");
+    let Modal1 = document.querySelector(".form-l--master");
+    let ModalClose1 = document.querySelector(".form-l--master__close");
     let btnOpen = document.querySelector(".call-open-modal");
     let btnOpen2 = document.querySelector(".call-open-modal2");
 
@@ -141,10 +139,18 @@ window.addEventListener("load", function () {
         });
     }
 
+    if (ModalClose1 !== null) {
+        ModalClose1.addEventListener("click", function (e) {
+            fadeOut(Fade);
+            fadeOut(Modal1);
+        });
+    }
+
     if (Fade !== null) {
         Fade.addEventListener("click", function (e) {
             fadeOut(Fade);
             fadeOut(Modal);
+            fadeOut(Modal1);
         });
     }
 });
@@ -193,3 +199,9 @@ jQuery(".text-thankyou__close").on("click", function (){
     jQuery(".text-thankyou").fadeOut();
 })
 
+jQuery("body").on("click", ".specialist-item__btn", function (){
+    let Modal1 = document.querySelector(".form-l--master");
+    let Fade = document.querySelector(".overlay");
+    fadeIn(Fade);
+    fadeIn(Modal1);
+})
