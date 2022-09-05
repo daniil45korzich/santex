@@ -28,6 +28,10 @@ window.addEventListener("load", function () {
         var swiperSpecialist = new Swiper(SpecialistSwiper, {
             loop: true,
             spaceBetween: 15,
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false,
+            },
             navigation: {
                 nextEl: ".specialist-arrows__next",
                 prevEl: ".specialist-arrows__prev",
@@ -52,6 +56,10 @@ window.addEventListener("load", function () {
                 el: ".gallery-paginations",
                 clickable: true,
             },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
             breakpoints: {
                 768: {
                     slidesPerView: 2,
@@ -68,6 +76,14 @@ window.addEventListener("load", function () {
         var swiperReviewList = new Swiper(ReviewListSwiper, {
             loop: true,
             spaceBetween: 35,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                prevEl: ".arrow-review-list-left",
+                nextEl: ".arrow-review-list-right",
+            },
             breakpoints: {
                 900: {
                     slidesPerView: 1,
@@ -84,8 +100,13 @@ window.addEventListener("load", function () {
         var swiperBanner = new Swiper(BannerSwiper, {
             loop: true,
             slidesPerView: 1,
+            autoplay: {
+                delay: 4500,
+                disableOnInteraction: false,
+            },
             navigation: {
-                nextEl: ".banner-wrapper__arrow",
+                prevEl: ".arrow-left",
+                nextEl: ".arrow-right",
             },
         });
     }
@@ -145,8 +166,15 @@ jQuery(".faq-item").on("click", function (){
 });
 
 jQuery(".content__btn").on("click", function (){
-   jQuery(".content__text--next").show(250);
-   jQuery(this).fadeOut(250);
+    if(jQuery(this).hasClass("content__btn--is-open")){
+        jQuery(".content__text--next").hide(250);
+        jQuery(this).text("Раскрыть");
+        jQuery(this).removeClass("content__btn--is-open");
+    } else {
+        jQuery(".content__text--next").show(250);
+        jQuery(this).text("Скрыть");
+        jQuery(this).addClass("content__btn--is-open");
+    }
 });
 
 jQuery(".header-bottom__close-mobile").on("click", function (){
@@ -156,3 +184,12 @@ jQuery(".header-bottom__close-mobile").on("click", function (){
 jQuery(".header-middle-flex__burger").on("click", function (){
     jQuery(".header-bottom").show();
 })
+
+jQuery(".text-thankyou__btn").on("click", function (){
+    jQuery(".text-thankyou").fadeOut();
+})
+
+jQuery(".text-thankyou__close").on("click", function (){
+    jQuery(".text-thankyou").fadeOut();
+})
+

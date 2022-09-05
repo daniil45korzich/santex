@@ -119,6 +119,12 @@ body {
     color:#595959;
     font-size: 13px;
 
+    a {
+      text-decoration: none;
+      color:#595959;
+      font-size: 13px;
+    }
+
     &--location {
       cursor: pointer;
       
@@ -210,14 +216,13 @@ body {
   &__phones {
     position: relative;
 
-    &:after {
+    &--whatsapp {
       content:"";
       width: 20px;
       height: 20px;
       position: absolute;
       left: -35px;
       top: 6px;
-      background: url("../img/whatsapp-header.svg") no-repeat;
 
       @media (max-width: @xs) {
         display: none;
@@ -395,6 +400,7 @@ body {
     text-align: center;
     font-family: "OpenSansBold";
     margin-bottom: 10px;
+    text-transform: uppercase;
 
     @media (max-width: @xs) {
       font-size: 18px;
@@ -702,6 +708,9 @@ body {
   &__arrow {
     position: absolute;
     right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
     top: 250px;
     cursor: pointer;
     transition: 0.2s all;
@@ -710,6 +719,10 @@ body {
     &:hover {
       transition: 0.2s all;
       opacity: 0.4;
+    }
+
+    .arrow-left {
+      transform: rotate(180deg);
     }
   }
 }
@@ -1012,6 +1025,7 @@ body {
     font-family: "OpenSansBold";
     margin-top: 22px;
     transition: 0.2s all;
+    cursor: pointer;
 
     &:hover {
       color: #ffffff;
@@ -1306,7 +1320,39 @@ body {
 }
 
 .review-list {
+  position: relative;
   margin-top: 65px;
+
+  &__container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    padding: 0;
+  }
+
+  &__arrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .arrow-review-list-left {
+      transform: rotate(180deg);
+      position: relative;
+      left: -40px;
+      cursor: pointer;
+    }
+
+    .arrow-review-list-right {
+      position: relative;
+      right: -40px;
+      cursor: pointer;
+    }
+
+    @media (max-width: @tablet) {
+      display: none !important;
+    }
+  }
 
   &__btn {
     cursor: pointer;
@@ -1421,6 +1467,35 @@ body {
   }
   @media (max-width: @xs) {
     margin-top: 35px;
+  }
+
+  &__btn {
+    cursor: pointer;
+    background: #17c5e6;
+    border-radius: 5px;
+    width: 265px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    border: none;
+    margin: 40px auto 0;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: "OpenSansBold";
+    transition: 0.2s all;
+
+    &:hover {
+      background: #095296;
+      transition: 0.2s all;
+    }
+
+    @media (max-width: @xs) {
+      margin-top: 15px;
+      margin-bottom: 25px;
+      font-size: 14px;
+    }
   }
 }
 
@@ -1580,14 +1655,13 @@ body {
   position: relative;
   margin-bottom: 30px;
 
-  &:after {
+  &__whatsapp {
     content: "";
     width: 20px;
     height: 20px;
     position: absolute;
     left: -35px;
     top: 6px;
-    background: url("../img/whatsapp-footer.svg") no-repeat;
   }
 
   &__item {
@@ -1637,6 +1711,12 @@ body {
     span {
       color: #404356;
       font-size: 16px;
+
+      a {
+        text-decoration: none;
+        color: #404356;
+        font-size: 16px;
+      }
     }
     @media (max-width: @xs) {
       justify-content: center;
@@ -1802,6 +1882,8 @@ body {
 }
 
 .services-info-wrapper-contact {
+  position: sticky;
+  top: 0;
   height: max-content;
   background: #d6dfe9;
   padding: 25px 0;
@@ -1871,6 +1953,9 @@ body {
       color: #28a1da;
       border-bottom: 1px dashed;
     }
+  }
+  @media (max-width: @tablet) {
+    position: static;
   }
   @media (max-width: @xs) {
     min-width: 100%;
@@ -2060,6 +2145,109 @@ body {
       bottom: 0;
       left: 0;
       transform: rotate(-45deg);
+    }
+  }
+}
+
+.text-thankyou {
+  display: none;
+  background: #fff;
+  padding: 36px 0px 30px;
+  max-width: 620px;
+  position: fixed;
+  z-index: 100;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+
+  @media (max-width: @mobile) {
+    transform: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 14px;
+  }
+
+  &__info {
+    font-size: 23px;
+    color: #404356;
+    text-align: center;
+    margin: auto;
+    max-width: 300px;
+    @media (max-width: @mobile) {
+      font-size: 14px;
+    }
+
+    &--title {
+      font-size:41px;
+      margin-bottom: 20px;
+      font-family: "OpenSansSemiBold";
+      @media (max-width: @mobile) {
+        font-size: 23px;
+      }
+    }
+  }
+
+  &__close {
+    position: absolute;
+    right: 12px;
+    top: 5px;
+    transition: 0.5s all;
+    transform: rotate(45deg);
+
+    &:after {
+      content: "";
+      width: 2px;
+      height: 21px;
+      position: absolute;
+      background: #333333;
+      transition: 0.5s all;
+    }
+
+    &:before {
+      content: "";
+      width: 22px;
+      height: 2px;
+      position: absolute;
+      background: #333333;
+      top: 9px;
+      left: -10px;
+      transition: 0.5s all;
+    }
+  }
+
+  &__btn {
+    cursor: pointer;
+    background: #095296;
+    border-radius: 5px;
+    width: 200px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    border: none;
+    font-size: 18px;
+    font-family: "OpenSansBold";
+    margin-left: 25px;
+    transition: 0.2s all;
+    margin: auto;
+    margin-top: auto;
+    margin-top: 20px;
+
+    @media (max-width: @mobile) {
+      font-size: 14px;
+      width: 149px;
+      height: 45px;
+    }
+
+    &:hover {
+      transition: 0.2s all;
+      background: #17c5e6;
     }
   }
 }
