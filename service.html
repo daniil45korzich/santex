@@ -430,20 +430,39 @@
 </footer>
 
 
+
+
 <div class="overlay"></div>
-<div class="form-l">
-    <img src="img/close-popup.png" class="form-l__close">
-    <div class="form-l__title">Заказать звонок</div>
-    <div class="form-l__label">Имя</div>
-    <div class="form-l__input"><input type="text" name="name"></div>
-    <div class="form-l__label">Телефон*</div>
-    <div class="form-l__input"><input type="text" name="theme"></div>
-    <div class="form-l__label">Сообщение</div>
-    <div class="form-l__input"><input type="text" name="sms"></div>
+<div class="form-l form-l--call">
+    <div class="form-l__close form-l--call__close"></div>
+    <div class="form-l__title">Перезвоните мне</div>
+    <div class="form-l__subtitle">Укажите Ваши данные и наш менеджер с Вами свяжется</div>
+    <div class="form-l__input"><input type="text" name="name" placeholder="Ваше имя"></div>
+    <div class="form-l__input"><input type="text" name="phone" placeholder="Ваш телефон"></div>
+    <textarea class="form-l__textarea" name="comment" placeholder="Ваш комментарий"></textarea>
     <button class="form-l__btn">Отправить</button>
     <p class="form-l__text">
-        Заполните поля выше и наши менеджеры свяжутся с Вами в ближайшее время!
+        Нажимая кнопку «Отправить» я принимаю условия<br>политики конфиденциальности.
     </p>
+</div>
+
+<div class="form-l form-l--master">
+    <div class="form-l__close form-l--master__close"></div>
+    <div class="form-l__title">Вызвать мастера</div>
+    <div class="form-l__subtitle">Укажите Ваши данные и наш мастер с Вами свяжется</div>
+    <div class="form-l__input"><input type="text" name="name" placeholder="Ваше имя"></div>
+    <div class="form-l__input"><input type="text" name="phone" placeholder="Ваш телефон"></div>
+    <button class="form-l__btn">Отправить</button>
+    <p class="form-l__text">
+        Нажимая кнопку «Вызвать!» я принимаю условия<br>политики конфиденциальности.
+    </p>
+</div>
+
+<div class="text-thankyou">
+    <div class="text-thankyou__info--title">Спасибо!</div>
+    <div class="text-thankyou__close"></div>
+    <div class="text-thankyou__info">Наш менеджер свяжется с вами в ближайшее время!</div>
+    <div class="text-thankyou__btn">Закрыть</div>
 </div>
 
 <script src="js/jquery.min.js" type="text/javascript"></script>
