@@ -115,6 +115,8 @@ window.addEventListener("load", function () {
     let ModalClose = document.querySelector(".form-l--call__close");
     let Modal1 = document.querySelector(".form-l--master");
     let ModalClose1 = document.querySelector(".form-l--master__close");
+    let Modal2 = document.querySelector(".form-l--review");
+    let ModalClose2 = document.querySelector(".form-l--review__close");
     let btnOpen = document.querySelector(".call-open-modal");
     let btnOpen2 = document.querySelector(".call-open-modal2");
 
@@ -143,6 +145,15 @@ window.addEventListener("load", function () {
         ModalClose1.addEventListener("click", function (e) {
             fadeOut(Fade);
             fadeOut(Modal1);
+            fadeOut(Modal2);
+        });
+    }
+
+    if (ModalClose2 !== null) {
+        ModalClose2.addEventListener("click", function (e) {
+            fadeOut(Fade);
+            fadeOut(Modal1);
+            fadeOut(Modal2);
         });
     }
 
@@ -151,6 +162,7 @@ window.addEventListener("load", function () {
             fadeOut(Fade);
             fadeOut(Modal);
             fadeOut(Modal1);
+            fadeOut(Modal2);
         });
     }
 });
@@ -204,4 +216,11 @@ jQuery("body").on("click", ".specialist-item__btn", function (){
     let Fade = document.querySelector(".overlay");
     fadeIn(Fade);
     fadeIn(Modal1);
+})
+
+jQuery("body").on("click", ".review-list__btn", function (){
+    let Modal2 = document.querySelector(".form-l--review");
+    let Fade = document.querySelector(".overlay");
+    fadeIn(Fade);
+    fadeIn(Modal2);
 })
