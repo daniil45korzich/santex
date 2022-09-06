@@ -248,3 +248,13 @@ jQuery("body").on("click", ".footer-top-info-left__place", function (){
     fadeIn(Fade);
     fadeIn(Modal3);
 })
+
+jQuery("body").on("click", ".overlay-city__item", function (){
+    let Modal3 = document.querySelector(".overlay-city");
+    let Fade = document.querySelector(".overlay");
+    fadeOut(Fade);
+    fadeOut(Modal3);
+
+    jQuery(".header-top-right__item--location").find(".header-top-right__text").text(jQuery(this).text());
+    jQuery(".footer-top-info-left__place").find('span').text(jQuery(this).text());
+})
