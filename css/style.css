@@ -2241,6 +2241,15 @@ body {
   border-radius: 5px;
   padding-bottom: 25px;
 }
+@media (max-width: 880px) {
+  .overlay-city {
+    transform: none;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+  }
+}
 .overlay-city__head {
   display: flex;
   justify-content: space-between;

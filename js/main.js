@@ -235,7 +235,7 @@ jQuery("body").on("click", ".review-list__btn", function (){
     fadeIn(Modal2);
 })
 
-jQuery("body").on("click", ".header-top-right__text", function (){
+jQuery("body").on("click", ".header-top-right__item--location", function (){
     let Modal3 = document.querySelector(".overlay-city");
     let Fade = document.querySelector(".overlay");
     fadeIn(Fade);
