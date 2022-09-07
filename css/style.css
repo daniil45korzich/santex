@@ -1605,6 +1605,9 @@ body {
     margin-left: 45px;
   }
 }
+.footer-top-info-left {
+  min-width:287px;
+}
 .footer-top-info-left__place {
   display: flex;
   align-items: center;
