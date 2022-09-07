@@ -487,6 +487,7 @@ body {
   font-size: 15px;
   padding-left: 20px;
   transition: 0.2s all;
+  text-decoration: none;
 }
 .services-list-item__content ul li a:after {
   content: "";
@@ -499,8 +500,8 @@ body {
   transition: 0.2s all;
 }
 .services-list-item__content ul li a:hover {
-  text-decoration: none;
   transition: 0.2s all;
+  color: #095296;
 }
 .services-list-item__content ul li a:hover:after {
   transition: 0.2s all;
