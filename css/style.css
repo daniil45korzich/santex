@@ -526,11 +526,13 @@ body {
 @media (max-width: 880px) {
   .services-list-item__price {
     font-size: 20px;
+    position: static;
+    margin-top: 30px;
   }
 }
 @media (max-width: 880px) {
   .services-list-item {
-    height: 350px;
+    height: auto;
   }
 }
 .block-info {
