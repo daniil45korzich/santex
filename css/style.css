@@ -585,6 +585,11 @@ body {
   font-size: 25px;
   font-family: "OpenSansBold";
 }
+@media (min-width: 1170px) {
+  .block-info-wrapper-description__title {
+     white-space: nowrap;
+  }
+}
 @media (max-width: 1170px) {
   .block-info-wrapper-description__title br {
     display: none;
