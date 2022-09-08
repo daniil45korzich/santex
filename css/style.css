@@ -507,7 +507,6 @@ body {
 .services-list-item__content ul li a:hover {
   transition: 0.2s all;
   color: #095296;
-  text-decoration: underline;
 }
 .services-list-item__content ul li a:hover:after {
   transition: 0.2s all;
